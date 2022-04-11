@@ -24,18 +24,14 @@
     android:key ="plate_number"
     android:title="License Plate Number" />
 
-    <TextViewPreference
-        android:id="@+id/txtView"
+    <ListPreference
+        android:key="truck_typer"
+        android:entries= "@array/truck_type"
+        android:entryValues="@array/truck_type"
+        android:title="Truck Type"
+        android:summary="The type of the truck"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select language:"
-        android:textSize = "20dp" />
-
-    <SpinnerPreference
-        android:id="@+id/spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/txtView"/>
+        android:layout_height="wrap_content"/>
 
     <EditTextPreference
         android:key="id"
